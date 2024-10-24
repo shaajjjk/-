@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Байланыс</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>Клуб 2Dos</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Басты бет</a></li>
+          <li><a href="prices.html">Бағалар</a></li>
+          <li><a href="games.html">Ойындар</a></li>
+          <li><a href="events.html">Турнирлер</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="contact">
+    <div class="container">
+      <h2>Байланыс ақпараты</h2>
+      <p>Кез келген сұрақтарыңыз бойынша бізге хабарласыңыз. Біз сізге көмектесуге әрқашан дайынбыз!</p>
+
+      <div class="contact-details">
+        <h3>Байланыс ақпараттары:</h3>
+        <ul>
+          <li><strong>Адрес:</strong> Алматы, Абылай хан көшесі, 58</li>
+          <li><strong>Телефон:</strong> +7 (777) 777-77-67</li>
+          <li><strong>Email:</strong> info@club247.kz</li>
+          <li><strong>Жұмыс уақыты:</strong> Тәулік бойы ашық (24/7)</li>
+        </ul>
+      </div>
+
+      <h3>Бізге хабарлама жіберіңіз</h3>
+      <form action="contact_success.html" method="POST">
+        <div class="form-group">
+          <label for="name">Атыңыз:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Хабарламаңыз:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn">Жіберу</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Оңталапов Қадір. Барлық құқықтар қорғалған.</p>
+  </footer>
+</body>
+</html>

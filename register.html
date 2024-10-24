@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тіркелу</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div id="branding">
+        <h1>Клуб 2Dos</h1>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Басты бет</a></li>
+          <li><a href="prices.html">Бағалар</a></li>
+          <li><a href="games.html">Ойындар</a></li>
+		  <li><a href="events.html">Турнирлер</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="register">
+    <div class="container">
+      <h2>Клубқа тіркеліңіз</h2>
+      <form action="register_success.html" method="POST">
+        <div class="form-group">
+          <label for="name">Атыңыз:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Телефон нөмірі:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Құпия сөз:</label>
+          <input type="password" id="password" name="password" required>
+        </div>
+        <div class="form-group">
+          <label for="confirm_password">Құпия сөзді растаңыз:</label>
+          <input type="password" id="confirm_password" name="confirm_password" required>
+        </div>
+        <button type="submit" class="btn">Тіркелу</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2024 Оңталапов Қадір. Барлық құқықтар қорғалған.</p>
+  </footer>
+
+  <script>
+    // Құпия сөзді тексеру функциясы
+    document.querySelector("form").addEventListener("submit", function(event) {
+      const password = document.getElementById("password").value;
+      const confirmPassword = document.getElementById("confirm_password").value;
+
+      if (password !== confirmPassword) {
+        alert("Құпия сөздер сәйкес келмейді.");
+        event.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>

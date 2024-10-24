@@ -1,0 +1,263 @@
+/* Общие стили */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Шапка сайта */
+header {
+  background: #0f0f0f;
+  color: #fff;
+  padding: 20px 0;
+}
+
+#branding h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  color: #00ff7f; /* Яркий неоновый зеленый */
+}
+
+nav ul {
+  list-style: none;
+  float: right;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+  color: #ff00ff; /* Неоновый розовый */
+}
+
+/* Баннер */
+.banner {
+  background: url('../img/banner.jpg') no-repeat center center/cover;
+  color: #fff;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.banner h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 10px #00ffff; /* Неоновая тень */
+}
+
+.banner p {
+  font-size: 1.5rem;
+}
+
+.banner .btn {
+  background: #ff00ff;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0 0 15px #ff00ff; /* Неоновая подсветка */
+}
+
+.banner .btn:hover {
+  background: #ff1493;
+  box-shadow: 0 0 20px #ff1493;
+}
+
+/* Текстовые блоки с неоном для главной страницы */
+.section {
+  margin-top: 50px;
+  padding: 30px;
+  background-color: #111;
+  box-shadow: 0 0 10px #00ff7f;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.section h2 {
+  color: #00ff7f;
+  text-shadow: 0 0 10px #00ff7f;
+  font-size: 2.5rem;
+}
+
+.section p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+
+/* Форма регистрации */
+.register {
+  background: #222;
+  padding: 50px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 255, 127, 0.5);
+}
+
+.register h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.register .form-group {
+  margin-bottom: 20px;
+}
+
+.register .form-group label {
+  display: block;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.register .form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  background: #444;
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.register .form-group input:focus {
+  outline: none;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+.register .btn {
+  background: #00ff7f;
+  color: #fff;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 1.3rem;
+  transition: background 0.3s ease-in-out;
+  box-shadow: 0 0 15px #00ff7f;
+}
+
+.register .btn:hover {
+  background: #00ff99;
+  box-shadow: 0 0 20px #00ff99;
+}
+
+/* Подвал */
+footer {
+  background: #0f0f0f;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #ff00ff;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Неоновые блоки для событий */
+.event {
+  background: #111;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+.event h3 {
+  font-size: 1.8rem;
+  color: #00ffff;
+  text-shadow: 0 0 10px #00ffff;
+}
+
+.event p {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.event .btn {
+  background: #ff00ff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  box-shadow: 0 0 10px #ff00ff;
+}
+
+.event .btn:hover {
+  background: #ff1493;
+  box-shadow: 0 0 15px #ff1493;
+}
+
+/* Цены */
+.prices {
+  background: #111;
+  padding: 50px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #00ff7f;
+}
+
+.prices h2 {
+  font-size: 2.5rem;
+  color: #00ff7f;
+  margin-bottom: 30px;
+}
+
+.prices table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.prices table th, .prices table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid #555;
+  color: #fff;
+}
+
+.prices table th {
+  background: #222;
+  color: #00ff7f;
+}
+
+.prices table td {
+  background: #333;
+}
+
+.prices table tr:hover td {
+  background: #00ff99;
+  color: #000;
+  transition: background 0.3s;
+}
